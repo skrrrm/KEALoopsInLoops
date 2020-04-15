@@ -40,6 +40,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.listBoxResult = new System.Windows.Forms.ListBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // richTextBoxResult
@@ -72,7 +74,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(560, 286);
+            this.button2.Location = new System.Drawing.Point(560, 317);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(128, 50);
             this.button2.TabIndex = 3;
@@ -82,7 +84,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(560, 342);
+            this.button3.Location = new System.Drawing.Point(560, 407);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(128, 50);
             this.button3.TabIndex = 4;
@@ -92,21 +94,23 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(1132, 487);
+            this.button4.Location = new System.Drawing.Point(560, 495);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(128, 50);
             this.button4.TabIndex = 5;
-            this.button4.Text = "button4";
+            this.button4.Text = "Øvelse 4";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(1132, 543);
+            this.button5.Location = new System.Drawing.Point(560, 584);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(128, 50);
             this.button5.TabIndex = 6;
-            this.button5.Text = "button5";
+            this.button5.Text = "Øvelse 5";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // labelInfoResult
             // 
@@ -122,18 +126,18 @@
             this.labelO1.AutoSize = true;
             this.labelO1.Location = new System.Drawing.Point(713, 243);
             this.labelO1.Name = "labelO1";
-            this.labelO1.Size = new System.Drawing.Size(567, 25);
+            this.labelO1.Size = new System.Drawing.Size(573, 25);
             this.labelO1.TabIndex = 8;
-            this.labelO1.Text = "Dan en streng bestående af 10 linjer med 30 stjerne i hver";
+            this.labelO1.Text = "Dan en streng bestående af 10 linjer med 30 stjerne i hver.";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(713, 299);
+            this.label2.Location = new System.Drawing.Point(713, 330);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(333, 25);
+            this.label2.Size = new System.Drawing.Size(339, 25);
             this.label2.TabIndex = 9;
-            this.label2.Text = "Vis i en listbox alle tal fra 0 til 999";
+            this.label2.Text = "Vis i en listbox alle tal fra 0 til 999.";
             // 
             // listBoxResult
             // 
@@ -147,17 +151,38 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(713, 355);
+            this.label3.Location = new System.Drawing.Point(713, 420);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(446, 25);
+            this.label3.Size = new System.Drawing.Size(452, 25);
             this.label3.TabIndex = 11;
-            this.label3.Text = "Vis i en listBox de binære tal fra 0000 til 1111";
+            this.label3.Text = "Vis i en listBox de binære tal fra 0000 til 1111.";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(713, 508);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(517, 25);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Vis i en listbox alle kombinationer af cifrene 7,8 og 9.";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(713, 584);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(496, 50);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "Vis i en listbox alle kombinationer af 3 cifre ( 0- 9 ),\r\nhvor 7 går op i tværsum" +
+    "men.\r\n";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1326, 691);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.listBoxResult);
             this.Controls.Add(this.label2);
@@ -191,6 +216,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ListBox listBoxResult;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }
 
