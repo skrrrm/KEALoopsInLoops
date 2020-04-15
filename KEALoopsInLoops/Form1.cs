@@ -44,8 +44,9 @@ namespace KEALoopsInLoops
         // Øvelse 2
         private void button2_Click(object sender, EventArgs e)
         {
-            // clearing text box
+            // clearing text/list box 
             richTextBoxResult.Clear();
+            listBoxResult.Items.Clear();
             richTextBoxResult.Visible = false;
             listBoxResult.Visible = true;
 
@@ -56,6 +57,31 @@ namespace KEALoopsInLoops
                     for (int c = 0; c <= 9; c++)
                     {
                         listBoxResult.Items.Add($"{a}{b}{c}");
+                    }
+                }
+            }
+
+        }
+
+        // Øvelse 3
+        private void button3_Click(object sender, EventArgs e)
+        {
+            // clearing text/list box 
+            richTextBoxResult.Clear();
+            listBoxResult.Items.Clear();
+            richTextBoxResult.Visible = false;
+            listBoxResult.Visible = true;
+
+            for (int a = 0; a <= 1; a++)
+            {
+                for (int b = 0; b <= 1; b++)
+                {
+                    for (int c = 0; c <= 1; c++)
+                    {
+                        for (int d = 0; d <= 1; d++)
+                        {
+                            listBoxResult.Items.Add($"{a}{b}{c}{d}");
+                        }
                     }
                 }
             }

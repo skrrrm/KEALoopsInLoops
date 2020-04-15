@@ -39,6 +39,7 @@
             this.labelO1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.listBoxResult = new System.Windows.Forms.ListBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // richTextBoxResult
@@ -81,12 +82,13 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(1132, 431);
+            this.button3.Location = new System.Drawing.Point(560, 342);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(128, 50);
             this.button3.TabIndex = 4;
-            this.button3.Text = "button3";
+            this.button3.Text = "Øvelse 3";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -142,11 +144,21 @@
             this.listBoxResult.Size = new System.Drawing.Size(406, 404);
             this.listBoxResult.TabIndex = 10;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(713, 355);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(446, 25);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "Vis i en listBox de binære tal fra 0000 til 1111";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1326, 691);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.listBoxResult);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.labelO1);
@@ -178,6 +190,7 @@
         private System.Windows.Forms.Label labelO1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ListBox listBoxResult;
+        private System.Windows.Forms.Label label3;
     }
 }
 
