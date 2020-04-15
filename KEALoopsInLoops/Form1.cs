@@ -30,7 +30,6 @@ namespace KEALoopsInLoops
             string star = "*";  // String.Concat(Enumerable.Repeat("*", 30)); used for a solution with only one loop
             string everything = "";
 
-
             for (int i = 1; i <= 10; i++)
             {
                 everything = everything + newline;
@@ -56,11 +55,10 @@ namespace KEALoopsInLoops
                 {
                     for (int c = 0; c <= 9; c++)
                     {
-                        listBoxResult.Items.Add($"{a}{b}{c}");
+                        listBoxResult.Items.Add($"{a}{b}{c}"); // listing
                     }
                 }
             }
-
         }
 
         // Øvelse 3
@@ -80,14 +78,14 @@ namespace KEALoopsInLoops
                     {
                         for (int d = 0; d <= 1; d++)
                         {
-                            listBoxResult.Items.Add($"{a}{b}{c}{d}");
+                            listBoxResult.Items.Add($"{a}{b}{c}{d}"); // listing
                         }
                     }
                 }
             }
-
         }
 
+        // Øvelse 4
         private void button4_Click(object sender, EventArgs e)
         {
             // clearing text/list box 
@@ -102,15 +100,16 @@ namespace KEALoopsInLoops
                 {
                     for (int k = 7; k <= 9; k++)
                     {
-                        if (!(i == j || j == k || i == k))
+                        if (!(i == j || j == k || i == k)) // Removing equal numbers
                         {
-                            listBoxResult.Items.Add($"{i}{j}{k}");
+                            listBoxResult.Items.Add($"{i}{j}{k}"); // listing
                         }
                     }
                 }
             }
         }
 
+        // Øvelse 5
         private void button5_Click(object sender, EventArgs e)
         {
             // clearing text/list box 
@@ -125,11 +124,11 @@ namespace KEALoopsInLoops
                 {
                     for (int c = 0; c <= 9; c++)
                     {
-                        if ((a + b + c) % 7 == 0 && (a + b + c != 0))
+                        if ((a + b + c) % 7 == 0 && (a + b + c != 0)) // removing numbers that is not modulus 0 and also if a+b+c is 0
                         {
-                            listBoxResult.Items.Add($"{a} {b} {c} = {a + b + c}");
-                            listBoxResult.Items.Add("Tværsum delelig med 7.");
-                            listBoxResult.Items.Add("");
+                            listBoxResult.Items.Add($"{a} {b} {c} = {a + b + c}"); // listing number + result
+                            listBoxResult.Items.Add("Tværsum delelig med 7."); // listing comment 
+                            listBoxResult.Items.Add(""); // some nice space for simplicitys sake
 
                         }
                     }
